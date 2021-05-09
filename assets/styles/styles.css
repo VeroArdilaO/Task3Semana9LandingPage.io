@@ -1,0 +1,158 @@
+html body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
+  background: url(/assets/images/bg-pattern-desktop.svg);
+  background-size: cover;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@media (min-width: 1440px) {
+  body section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body section .container #logo {
+    margin-left: 6rem;
+    margin-top: 2rem;
+  }
+  body section .container #heroMobile {
+    display: none;
+  }
+  body section article {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+  }
+  body section article h1 {
+    width: 40%;
+    text-align: justify;
+    padding-left: 7rem;
+  }
+  body section article p {
+    text-align: justify;
+    padding: 1rem;
+    width: 78%;
+    padding-left: 5rem;
+  }
+  body section label {
+    padding: 2rem;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body section .container2 {
+    align-items: center;
+    margin-left: 4rem;
+  }
+  body section .container2 #heroDesktop {
+    display: block;
+    width: 100%;
+  }
+}
+body section article {
+  text-align: center;
+}
+body section article h1:nth-child(1) {
+  font-size: 3rem;
+  font-weight: 200;
+  color: #ce9797;
+  letter-spacing: 0.7rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+body section article h1:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #413a3a;
+  letter-spacing: 0.7rem;
+  margin: 0.4rem 0;
+}
+body section article h1:nth-child(3) {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #413a3a;
+  letter-spacing: 0.7rem;
+  margin: 0.4rem 0;
+}
+body section article p {
+  font-size: 1.2rem;
+  color: #ce9797;
+  margin: 2rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+}
+body section label {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 5rem;
+}
+body section label input {
+  padding: 1rem;
+  border: 0.1rem solid #ce9797;
+  border-radius: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  width: 65%;
+  background: none;
+}
+body section label input:invalid {
+  border: 2px solid red;
+}
+body section label input:focus {
+  outline: none;
+}
+body section label ::placeholder {
+  color: #ce9797;
+  font-size: 1rem;
+}
+body section label button {
+  border-radius: 2rem;
+  padding: 1rem;
+  align-self: center;
+  width: 20%;
+  height: 3rem;
+  margin-left: -3.5rem;
+  border: 0.1rem solid #ce9797;
+  background-color: #f28482;
+  cursor: pointer;
+}
+body section label button:hover {
+  box-shadow: 0 0 5px 1px black;
+  background-color: #f96262;
+}
+body section label button:hover img {
+  width: 1rem;
+  height: 1rem;
+}
+body section .errorIcon {
+  position: absolute;
+  right: 35%;
+  top: 35%;
+}
+body section .errorMessage {
+  text-align: center;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5rem;
+}
+body section .errorMessage p {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+body section #heroDesktop {
+  display: none;
+}
+
+.container #logo {
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

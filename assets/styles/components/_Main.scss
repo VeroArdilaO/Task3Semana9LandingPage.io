@@ -1,0 +1,130 @@
+body {
+  section {
+
+    article {
+      text-align: center;
+
+      h1 {
+        &:nth-child(1) {
+          font-size: 3rem;
+          font-weight: 200;
+          color: hsl(0, 36%, 70%);
+          letter-spacing: .7rem;
+          margin: 1.5rem 0 .5rem 0
+        }
+
+        &:nth-child(2) {
+          font-size: 3rem;
+          font-weight: 600;
+          color: hsl(0, 6%, 24%);
+          letter-spacing: .7rem;
+          margin: .4rem 0;
+
+        }
+
+        &:nth-child(3) {
+          font-size: 3rem;
+          font-weight: 600;
+          color: hsl(0, 6%, 24%);
+          letter-spacing: .7rem;
+          margin: .4rem 0;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: hsl(0, 36%, 70%);
+        margin: 2rem;
+        letter-spacing: .1rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    label {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 5rem;
+
+      input {
+        padding: 1rem;
+        border: .1rem solid hsl(0, 36%, 70%);
+        border-radius: 2rem;
+        font-family: 'Josefin Sans', sans-serif;
+        width: 65%;
+        background: none;
+
+        &:invalid {
+          border: 2px solid red;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      ::placeholder {
+        color: hsl(0, 36%, 70%);
+        font-size: 1rem;
+      }
+
+      button {
+        border-radius: 2rem;
+        padding: 1rem;
+        align-self: center;
+        width: 20%;
+        height: 3rem;
+        margin-left: -3.5rem;
+        border: .1rem solid hsl(0, 36%, 70%);
+        background-color: #f28482;
+        cursor: pointer;
+
+        }
+
+        button:hover {
+        box-shadow: 0 0 5px 1px black;
+        background-color: hsl(0, 93%, 68%);
+
+        img {
+          width: 1rem;
+          height: 1rem;
+
+        }
+      }
+    }
+    .errorIcon {
+      position: absolute;
+      right: 35%;
+      top: 35%;
+    }
+
+    .errorMessage {
+      text-align: center;
+      color:red;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      margin-top:-5rem;
+
+      p {
+
+        margin-right: 1rem;
+        font-size: 1.5rem;
+      }
+    }
+    #heroDesktop {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
